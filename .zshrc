@@ -17,12 +17,13 @@ setopt appendhistory
 bindkey -v
 # End of lines configured by zsh-newuser-install
 autoload -U colors && colors
-export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:/usr/local/go/bin:/home/alex/bin
 export EDITOR=vim
 export LC_ALL="en_US.utf-8"            # Fixes an encoding problem in tmux
 
 # Prompt settings
-PROMPT='┌─────%{%F{green}%}[%n@%m]%{%F{blue}%} (%c) %{%f%}
+PROMPT='
+┌─────%{%F{green}%}[%n@%m]%{%F{blue}%} (%c) %{%f%}
 └─╼ '
 
 # ssh-agent
