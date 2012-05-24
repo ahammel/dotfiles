@@ -24,6 +24,9 @@ export LC_ALL="en_US.utf-8"            # Fixes an encoding problem in tmux
 PROMPT='┌─────%{%F{green}%}[%n@%m]%{%F{blue}%} (%c) %{%f%}
 └─╼ '
 
+# ssh-agent
+eval $(ssh-agent) > /dev/null
+
 # Aliases
 alias ls='ls --color'
 alias grep='grep --color'
