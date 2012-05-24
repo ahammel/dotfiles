@@ -12,7 +12,8 @@ HISTFILE=~/.histfile
 HISTSIZE=1000
 SAVEHIST=5000
 setopt autocd nomatch
-unsetopt appendhistory beep notify
+unsetopt beep notify
+setopt appendhistory
 bindkey -v
 # End of lines configured by zsh-newuser-install
 autoload -U colors && colors
