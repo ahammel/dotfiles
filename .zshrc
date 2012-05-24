@@ -22,7 +22,7 @@ export EDITOR=vim
 export LC_ALL="en_US.utf-8"            # Fixes an encoding problem in tmux
 
 # Prompt settings
-PROMPT='
+PROMPT='%
 ┌─────%{%F{green}%}[%n@%m]%{%F{blue}%} (%c) %{%f%}
 └─╼ '
 

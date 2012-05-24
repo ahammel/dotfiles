@@ -1,14 +1,9 @@
 #!/bin/bash
 
 # Echoes a stamp with machine, directory, date and the hash of the current git
-# commit.
-# Useful for data provenance.
+# commit.  Useful for data provenance.
 
-echo -n '# ' 
-uname -a | cut -d ' ' -f 2
-echo -n '# '
-pwd
-echo  -n '# '
-date
-echo -n '# ' 
-git log --pretty=format:"%H %d" | grep HEAD | cut -d " " -f 1
+echo -n '# ';  uname -a | cut -d ' ' -f 2
+echo -n '# '; pwd
+echo -n '# '; date
+echo -n '# '; git log --pretty=format:"%H %d" | grep HEAD | cut -d " " -f 1
