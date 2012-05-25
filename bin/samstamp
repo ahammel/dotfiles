@@ -1,0 +1,11 @@
+#!/bin/bash
+
+#Inserts a stamp into the header of a .sam file containing the SHA1 hash of the
+#_unstamped_ file (as I'm pretty sure its impossible for a file to contain its
+#own hash!), the file name and the date and time of the stamp. Useful for data
+#provenance.
+
+grep ^@ $1
+echo -n "@CO	"; sha1sum $1
+echo -n "@CO	"; date
+grep -v @ $1
