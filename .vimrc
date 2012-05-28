@@ -30,8 +30,6 @@ set expandtab
 " F5 inserts current date
 nnoremap <F5> "=strftime("%b %d, %Y")<CR>p
 inoremap <F5> <C-R>=strftime("%b %d, %Y")<CR>
-" C-l clears search highlighting
-nnoremap <silent> <C-l> :nohl<CR><C-l> 
 
 """ Misc hacks.
 " w!! writes with sudo
