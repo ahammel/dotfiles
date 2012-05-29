@@ -8,4 +8,4 @@
 grep ^@ $1
 echo -n "@CO	"; sha1sum $1
 echo -n "@CO	"; date
-grep -v @ $1
+grep -v ^@ $1
