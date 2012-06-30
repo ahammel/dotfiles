@@ -20,9 +20,9 @@
 (global-font-lock-mode 1)
 
 ; Also highlight parens
-;(setq show-paren-delay 0
-;      show-paren-style 'parenthesis)
-;(show-paren-mode 1)
+(setq show-paren-delay 0
+     show-paren-style 'parenthesis)
+(show-paren-mode 1)
 
 ;; Default fill-column-width = 80
 (setq-default fill-column 80)
