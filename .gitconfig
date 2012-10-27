@@ -2,7 +2,7 @@
 	name = Alex Hammel
 	email = ahammel87@gmail.com
 [core]
-	autocrlf = input
+	autocrlf = false
 	safecrlf = true
 [alias]
   co = checkout
