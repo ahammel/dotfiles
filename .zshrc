@@ -42,6 +42,9 @@ man() {
         man "$@"
 }
 
+# source highlighting in less!
+export LESSOPEN="| /usr/bin/src-hilite-lesspipe.sh %s"
+
 ## Aliases
 # Reload this file
 alias reload='source ~/.zshrc'
@@ -55,6 +58,9 @@ alias pacman=pacman-color
 # Convenience
 alias e=vim
 alias vc='perl /home/alex/builds/vc-calc/vc/vc.pl'
+
+# Always update the database before running locate
+alias locate='sudo updatedb && locate'
 
 # Modify input devices
 alias killmouse='synclient TouchpadOff=1'
