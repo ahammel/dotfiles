@@ -42,6 +42,7 @@ alias upgrade='sudo pacman -Syu; echo "\nyaourt:\n" ;yaourt -Sua'
 alias dv='setxkbmap dvorak && xmodmap ~/.xmodmap'
 alias qw='setxkbmap us && xmodmap ~/.xmodmap'
 alias vc='perl /home/alex/builds/vc-calc/vc/vc.pl'
+alias less='less -R'
 
 alias gst='git status '
 alias ga='git add '
