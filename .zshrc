@@ -29,24 +29,51 @@ PROMPT='%
 # ssh-agent
 eval $(ssh-agent) > /dev/null
 
-# Aliases
+# coloured man pages, courtesy the Arch wiki
+man() {
+    env \
+        LESS_TERMCAP_mb=$(printf "\e[1;31m") \
+        LESS_TERMCAP_md=$(printf "\e[1;31m") \
+        LESS_TERMCAP_me=$(printf "\e[0m") \
+        LESS_TERMCAP_se=$(printf "\e[0m") \
+        LESS_TERMCAP_so=$(printf "\e[1;44;33m") \
+        LESS_TERMCAP_ue=$(printf "\e[0m") \
+        LESS_TERMCAP_us=$(printf "\e[1;34m") \
+        man "$@"
+}
+
+## Aliases
+# Reload this file
+alias reload='source ~/.zshrc'
+
+# Colorize things
 alias ls='ls --color'
 alias grep='grep --color'
-alias e=vim
-alias calc='Rscript -e'
-alias abstree='find /var/abs'
+alias less='less -R'
 alias pacman=pacman-color
+
+# Convenience
+alias e=vim
+alias vc='perl /home/alex/builds/vc-calc/vc/vc.pl'
+
+# Modify input devices
 alias killmouse='synclient TouchpadOff=1'
 alias raisemouse='synclient TouchpadOff=0'
-alias upgrade='sudo pacman -Syu; echo "\nyaourt:\n" ;yaourt -Sua'
 alias dv='setxkbmap dvorak && xmodmap ~/.xmodmap'
 alias qw='setxkbmap us && xmodmap ~/.xmodmap'
-alias vc='perl /home/alex/builds/vc-calc/vc/vc.pl'
-alias less='less -R'
 
+# Git
 alias gst='git status '
 alias ga='git add '
 alias gb='git branch '
 alias gc='git commit'
 alias gd='git diff'
 alias gco='git checkout '
+
+# Pacman
+alias pacupg='sudo pacman-color -Syu'
+alias pacsearch='pacman-color -Ss'
+alias pacinstall='sudo pacman-color -S'
+alias paclocal='sudo pacman-color -U'
+alias pacrem='sudo pacman-color -R'
+alias pacpurge='sudo pacman-color -Rns'
