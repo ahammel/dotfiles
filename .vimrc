@@ -1,8 +1,6 @@
 """ Alex's .vimrc for asimov
-" Last updated May 23, 2012
+" Last updated Nov 17, 2012
 "
-""" Plugins installed:
-" nerd-commenter
 
 """ Basics
 set nocompatible     	    " Explicitly unset vi compatibility mode
@@ -13,8 +11,23 @@ runtime! ftplugin/man.vim   " :Man for man info
 set autochdir               " dir is realtive to open buffer
 set showmatch               " highlight matching parens
 set nu                      " show line numbers by default
-filetype plugin on          " required for nerdcommenter. magic
 let mapleader = ","         " , for leader key
+
+"""Vundle
+filetype off                " required!
+call vundle#rc()
+
+" let Vundle manage Vundle
+" required! 
+Bundle 'gmarik/vundle'
+
+" original repos on github
+Bundle 'scrooloose/nerdcommenter.git'
+Bundle 'garbas/vim-snipmate.git'
+Bundle 'MarcWeber/vim-addon-mw-utils.git'
+Bundle 'vim-scripts/tlib.git'
+
+filetype plugin indent on   " required! 
 
 """Backups
 set backup
