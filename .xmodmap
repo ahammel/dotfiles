@@ -1,7 +1,6 @@
 !
-! Swamp caps_lock and ctrl-l
+! Swap Caps_Lock and Control_L
 !
-
 remove Lock = Caps_Lock
 remove Control = Control_L
 keysym Control_L = Caps_Lock
@@ -9,4 +8,7 @@ keysym Caps_Lock = Control_L
 add Lock = Caps_Lock
 add Control = Control_L
 
+!
+! Useless menu key = compose
+!
 keycode 135 = Multi_key

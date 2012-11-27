@@ -29,6 +29,23 @@ export PATH="$PATH:/usr/local/pgsql/bin"
 export PATH="$PATH:/home/alex/builds/clustalw-2.1-linux-x86_64-libcppstatic"
 
 export GIT_EDITOR=vim
+
+# coloured man pages, courtesy the Arch wiki
+man() {
+    env \
+        LESS_TERMCAP_mb=$(printf "\e[1;31m") \
+        LESS_TERMCAP_md=$(printf "\e[1;31m") \
+        LESS_TERMCAP_me=$(printf "\e[0m") \
+        LESS_TERMCAP_se=$(printf "\e[0m") \
+        LESS_TERMCAP_so=$(printf "\e[1;44;33m") \
+        LESS_TERMCAP_ue=$(printf "\e[0m") \
+        LESS_TERMCAP_us=$(printf "\e[1;34m") \
+        man "$@"
+}
+
+# source highlighting in less!
+export LESSOPEN="| /usr/bin/src-hilite-lesspipe.sh %s"
+
 ## Aliases
 # Reload this file
 alias reload='source ~/.zshrc'

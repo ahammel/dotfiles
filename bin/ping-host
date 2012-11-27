@@ -1,0 +1,7 @@
+#!/bin/bash
+
+host=${@: -1}
+ip=`print-hosts | grep $host | awk '{ print $2}'`
+args=`echo $@ | sed "s/$host//g"`
+
+ping $args $ip

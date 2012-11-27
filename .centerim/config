@@ -1,0 +1,14 @@
+mailcheck
+screensocketpath	/var/run/screen
+chatmode icq yahoo msn aim irc jab lj gg
+fromcharset	
+tocharset	
+nobidi
+smtp	localhost:25
+browser	mozilla
+ptp	0-0
+protocolormode
+sort_by_status_and_activity
+left_panel_width	25
+log_panel_height	6
+defaultauthmessage	Please accept my authorization to add you to my contact list.
