@@ -15,6 +15,7 @@ let mapleader = ","         " , for leader key
 
 """Vundle
 filetype off                " required!
+set rtp+=~/.vim/bundle/vundle
 call vundle#rc()
 
 " let Vundle manage Vundle
@@ -47,6 +48,7 @@ inoremap <F5> <C-R>=strftime("%b %d, %Y")<CR>
 """ Misc hacks.
 " w!! writes with sudo
 cmap w!! w !sudo dd of=%
+
 " New files open with template
 " Hack courtesy: http://vim.runpaint.org/typing/using-templates/
 autocmd! BufNewFile * silent! 0r ~/.vim/skel/tmpl.%:e
