@@ -75,7 +75,11 @@ comment=no
 required-attributes=
 
 # List of builtins function names that should not be used, separated by a comma
+<<<<<<< HEAD
 bad-functions=map,filter,apply,input
+=======
+bad-functions=map,filter,apply
+>>>>>>> origin/master
 
 # Regular expression which should only match correct module names
 module-rgx=(([a-z_][a-z0-9_]*)|([A-Z][a-zA-Z0-9]+))$
@@ -106,13 +110,18 @@ variable-rgx=[a-z_][a-z0-9_]{2,30}$
 inlinevar-rgx=[A-Za-z_][A-Za-z0-9_]*$
 
 # Good variable names which should always be accepted, separated by a comma
+<<<<<<< HEAD
 good-names=i,j,k,_,f,db
+=======
+good-names=i,j,k,ex,Run,_
+>>>>>>> origin/master
 
 # Bad variable names which should always be refused, separated by a comma
 bad-names=foo,bar,baz,toto,tutu,tata
 
 # Regular expression which should only match functions or classes name which do
 # not require a docstring
+<<<<<<< HEAD
 no-docstring-rgx=__.*__
 
 
@@ -120,6 +129,29 @@ no-docstring-rgx=__.*__
 
 # List of note tags to take in consideration, separated by a comma.
 notes=FIXME,XXX,TODO
+=======
+no-docstring-rgx=(__.*__|mock.*)
+
+
+[TYPECHECK]
+
+# Tells whether missing members accessed in mixin class should be ignored. A
+# mixin class is detected if its name ends with "mixin" (case insensitive).
+ignore-mixin-members=yes
+
+# List of classes names for which member attributes should not be checked
+# (useful for classes with attributes dynamically set).
+ignored-classes=SQLObject
+
+# When zope mode is activated, add a predefined set of Zope acquired attributes
+# to generated-members.
+zope=no
+
+# List of members which are set dynamically and missed by pylint inference
+# system, and so shouldn't trigger E0201 when accessed. Python regular
+# expressions are accepted.
+generated-members=REQUEST,acl_users,aq_parent
+>>>>>>> origin/master
 
 
 [SIMILARITIES]
@@ -137,6 +169,22 @@ ignore-docstrings=yes
 ignore-imports=no
 
 
+<<<<<<< HEAD
+=======
+[FORMAT]
+
+# Maximum number of characters on a single line.
+max-line-length=80
+
+# Maximum number of lines in a module
+max-module-lines=1000
+
+# String used as indentation unit. This is usually " " (4 spaces) or "\t" (1
+# tab).
+indent-string='    '
+
+
+>>>>>>> origin/master
 [VARIABLES]
 
 # Tells whether we should check for unused import in __init__ files.
@@ -151,6 +199,7 @@ dummy-variables-rgx=_|dummy
 additional-builtins=
 
 
+<<<<<<< HEAD
 [FORMAT]
 
 # Maximum number of characters on a single line.
@@ -182,6 +231,28 @@ zope=no
 # system, and so shouldn't trigger E0201 when accessed. Python regular
 # expressions are accepted.
 generated-members=REQUEST,acl_users,aq_parent
+=======
+[MISCELLANEOUS]
+
+# List of note tags to take in consideration, separated by a comma.
+notes=FIXME,XXX,TODO
+
+
+[CLASSES]
+
+# List of interface methods to ignore, separated by a comma. This is used for
+# instance to not check methods defines in Zope's Interface base class.
+ignore-iface-methods=isImplementedBy,deferred,extends,names,namesAndDescriptions,queryDescriptionFor,getBases,getDescriptionFor,getDoc,getName,getTaggedValue,getTaggedValueTags,isEqualOrExtendedBy,setTaggedValue,isImplementedByInstancesOf,adaptWith,is_implemented_by
+
+# List of method names used to declare (i.e. assign) instance attributes.
+defining-attr-methods=__init__,__new__,setUp
+
+# List of valid names for the first argument in a class method.
+valid-classmethod-first-arg=cls
+
+# List of valid names for the first argument in a metaclass class method.
+valid-metaclass-classmethod-first-arg=mcs
+>>>>>>> origin/master
 
 
 [IMPORTS]
@@ -202,6 +273,7 @@ ext-import-graph=
 int-import-graph=
 
 
+<<<<<<< HEAD
 [CLASSES]
 
 # List of interface methods to ignore, separated by a comma. This is used for
@@ -218,6 +290,8 @@ valid-classmethod-first-arg=cls
 valid-metaclass-classmethod-first-arg=mcs
 
 
+=======
+>>>>>>> origin/master
 [DESIGN]
 
 # Maximum number of arguments for function / method
