@@ -45,7 +45,7 @@ nnoremap <F5> "=strftime("%b %d, %Y")<CR>p
 inoremap <F5> <C-R>=strftime("%b %d, %Y")<CR>
 
 " Once sentence per line in the current paragraph
-nnoremap <F6> vip:s/\. \+/.\r/g<CR>vip:s/\([^\.]\)\n/\1 /g<CR>
+nnoremap <F6> vip:s/\.  \+/.\r/g<CR>vip:s/\([^\.]\)\n/\1 /g<CR>
 
 """ Misc hacks.
 " w!! writes with sudo
