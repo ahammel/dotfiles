@@ -8,8 +8,11 @@
   ci = commit
   st = status
   br = branch
-  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  hist = log --graph --all --pretty=format:'%Cred%h%Creset - %Cgreen(%cr)%Creset %s%C(yellow)%d%Creset' --abbrev-commit --date=relative
   type = cat-file -t
   dump = cat-file -p
+  graph = 
 [credential]
 	helper = cache --timeout=3600
+[color]
+	ui = auto

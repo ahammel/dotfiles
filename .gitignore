@@ -77,3 +77,4 @@ tex/
 tmp.txt
 weddingsongs.csv
 .vim/sessions
+*.swp
