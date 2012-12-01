@@ -5,11 +5,6 @@ wmiiscript=wmiirc # For wmii.sh
 
 # Keymaps
 xmodmap ~/.xmodmap
-<<<<<<< HEAD
-
-# Background
-xloadimage -onroot -fullscreen ~/Downloads/wallpapers/Penguin.jpg
-=======
 xbindkeys
 
 # Scroll wheel emulation
@@ -19,7 +14,6 @@ xinput set-int-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation Axes" 8 6 7 4
 
 # Background
 feh --bg-center ~/Downloads/wallpaper/arch_grey.jpg
->>>>>>> origin/master
 
 # Configuration Variables
 MODKEY=Mod4
@@ -37,11 +31,7 @@ export WMII_NORMCOLORS='#bbbbbb #222222 #444444'
 export WMII_FOCUSCOLORS='#eeeeee #005577 #005577'
 
 export WMII_BACKGROUND='#333333'
-<<<<<<< HEAD
-export WMII_FONT='-*-terminus-medium-r-*-*-16-*-*-*-*-*-*-*'
-=======
 export WMII_FONT='-*-terminus-medium-r-*-*-13-*-*-*-*-*-*-*'
->>>>>>> origin/master
 
 set -- $(echo $WMII_NORMCOLORS $WMII_FOCUSCOLORS)
 export WMII_TERM="konsole"
@@ -76,11 +66,7 @@ wmiir write /tagrules <<!
 
 # Status Bar Info
 status() {
-<<<<<<< HEAD
-	echo -n $(CheckConnection) ' | Gmail: ' $(check_gmail) ' | ' $(FuzzyClock)
-=======
 	echo -n $(check-battery) '    ' $(check-connection) '    ' $(fuzzyclock)
->>>>>>> origin/master
 }
 
 local_events() { true;}

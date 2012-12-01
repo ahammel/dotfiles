@@ -58,6 +58,7 @@ alias pacman=pacman-color
 # Convenience
 alias e=vim
 alias vc='perl /home/alex/builds/vc-calc/vc/vc.pl'
+alias py.test2='python2 -m pytest'
 
 # Always update the database before running locate
 alias locate='sudo updatedb && locate'
