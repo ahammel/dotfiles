@@ -17,17 +17,14 @@ setopt appendhistory
 bindkey -v
 # End of lines configured by zsh-newuser-install
 autoload -U colors && colors
-export PATH=$PATH:/usr/local/go/bin:/home/alex/bin
+export PATH=$PATH:/home/alex/bin
 export EDITOR=vim
 export LC_ALL="en_US.utf-8"            # Fixes an encoding problem in tmux
 
 # Prompt settings
 PROMPT='%
-┌─────%{%F{green}%}[%n@%m]%{%F{blue}%} (%c) %{%f%}
+┌─────%{%F{red}%}[%n@%m]%{%F{blue}%} (%c) %{%f%}
 └─╼ '
-
-# ssh-agent
-eval $(ssh-agent) > /dev/null
 
 # coloured man pages, courtesy the Arch wiki
 man() {
@@ -57,16 +54,9 @@ alias pacman=pacman-color
 
 # Convenience
 alias e=vim
-alias vc='perl /home/alex/builds/vc-calc/vc/vc.pl'
 
 # Always update the database before running locate
 alias locate='sudo updatedb && locate'
-
-# Modify input devices
-alias killmouse='synclient TouchpadOff=1'
-alias raisemouse='synclient TouchpadOff=0'
-alias dv='setxkbmap dvorak && xmodmap ~/.xmodmap'
-alias qw='setxkbmap us && xmodmap ~/.xmodmap'
 
 # Git
 alias gst='git status '

@@ -1,9 +1,0 @@
-# Increase volume
-"amixer set Master playback 2+"
-    m:0x0 + c:123
-    Alt + XF86AudioRaiseVolume
-
-# Decrease volume
-"amixer set Master playback 2-"
-    m:0x0 + c:122
-    Alt + XF86AudioLowerVolume
