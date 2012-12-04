@@ -29,7 +29,7 @@ Bundle 'vim-scripts/tlib.git'
 
 filetype plugin indent on   " required! 
 
-"""Backups
+""" Backups
 set backup
 set backupdir=~/.vim/backup
 
@@ -38,6 +38,10 @@ set smartindent
 set tabstop=4
 set shiftwidth=4
 set expandtab
+
+""" Filetype-specific settings
+"" Makefiles
+autocmd FileType make setlocal noexpandtab
 
 """ Keybindings
 " F5 inserts current date
