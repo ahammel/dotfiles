@@ -120,3 +120,5 @@ bin/cpc
 bin/phylo-csf
 bundle
 .vim/sessions
+.wmii/history.progs
+*.swo
