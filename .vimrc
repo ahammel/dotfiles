@@ -27,6 +27,7 @@ Bundle 'scrooloose/nerdcommenter.git'
 Bundle 'garbas/vim-snipmate.git'
 Bundle 'MarcWeber/vim-addon-mw-utils.git'
 Bundle 'vim-scripts/tlib.git'
+Bundle 'jcfaria/Vim-R-plugin.git'
 
 filetype plugin indent on   " required! 
 
