@@ -12,6 +12,7 @@ set autochdir               " dir is realtive to open buffer
 set showmatch               " highlight matching parens
 set nu                      " show line numbers by default
 let mapleader = ","         " , for leader key
+set nohlsearch              " Turn off search highlighting
 
 """Vundle
 filetype off                " required!
@@ -30,6 +31,10 @@ Bundle 'vim-scripts/tlib.git'
 Bundle 'jcfaria/Vim-R-plugin.git'
 
 filetype plugin indent on   " required! 
+
+""" Bundle configuration
+" No screenplugin required for R plugin
+let vimrplugin_screenplugin = 0
 
 """ Backups
 set backup
