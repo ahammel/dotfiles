@@ -1,0 +1,3 @@
+URxvt.scrollBar:        false
+urxvt.font:             xft:deja vu sans mono:size=9
+urxvt.boldFont:         xft:deja vu sans mono:size=11

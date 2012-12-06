@@ -3,7 +3,6 @@ builds
 .Rhistory
 .Skype/
 .Xauthority
-.Xresources
 .adobe/
 .backup.log
 .backup.sh
