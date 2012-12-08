@@ -28,12 +28,16 @@ Bundle 'garbas/vim-snipmate.git'
 Bundle 'MarcWeber/vim-addon-mw-utils.git'
 Bundle 'vim-scripts/tlib.git'
 Bundle 'jcfaria/Vim-R-plugin.git'
+Bundle 'vim-scripts/donbass.vim'
 
 filetype plugin indent on   " required! 
 
 """ Bundle configuration
 " No screenplugin required for R plugin
 let vimrplugin_screenplugin = 0
+
+" Turn on the donbass colour scheme
+colorscheme donbass
 
 """ Backups
 set backup
