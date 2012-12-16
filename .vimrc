@@ -36,9 +36,6 @@ filetype plugin indent on   " required!
 " No screenplugin required for R plugin
 let vimrplugin_screenplugin = 0
 
-" Turn on the donbass colour scheme
-colorscheme donbass
-
 """ Backups
 set backup
 set backupdir=~/.vim/backup

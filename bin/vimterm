@@ -1,0 +1,3 @@
+#!/usr/bin/env sh
+
+urxvt -fn xft:Inconsolata:pixelsize=14 -e vim +'colorscheme donbass'
