@@ -1,0 +1,11 @@
+#!/usr/bin/env sh
+#
+# A simple status updater.
+
+REFRESH=1
+
+while true
+do
+    echo "`check-battery`    `check-connection`    `fuzzyclock`"
+    sleep $REFRESH
+done

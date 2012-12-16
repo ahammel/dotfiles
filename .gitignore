@@ -78,3 +78,5 @@ weddingsongs.csv
 .vim/sessions
 *.swp
 .wmii/history.progs
+.i3/i3log
+.recently-used
