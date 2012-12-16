@@ -22,6 +22,12 @@ DOWN=j
 LEFT=h
 RIGHT=l
 
+# start unclutter
+unclutter &
+
+# merge .Xresources, mostly for urxvt setup
+xrdb -merge ~/.Xresources
+
 # Bars
 noticetimeout=5
 noticebar=/rbar/!notice
