@@ -122,3 +122,11 @@ bundle
 .vim/sessions
 .wmii/history.progs
 *.swo
+.i3/i3log
+.recently-used
+.xsession-errors
+.Xresources
+.emacs.d/
+.matplotlib
+.gem
+.gimp-2.6 .gimp-2.8

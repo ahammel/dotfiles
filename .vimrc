@@ -25,12 +25,13 @@ Bundle 'gmarik/vundle'
 
 " original repos on github
 Bundle 'scrooloose/nerdcommenter.git'
+Bundle 'scrooloose/nerdtree.git'
 Bundle 'garbas/vim-snipmate.git'
 Bundle 'MarcWeber/vim-addon-mw-utils.git'
 Bundle 'vim-scripts/tlib.git'
 Bundle 'jcfaria/Vim-R-plugin.git'
-Bundle 'scrooloose/nerdtree.git'
 Bundle 'flazz/vim-colorschemes.git'
+Bundle 'c9s/bufexplorer'
 
 filetype plugin indent on   " required! 
 
