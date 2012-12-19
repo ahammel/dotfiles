@@ -78,6 +78,7 @@ alias gd='git diff'
 alias gco='git checkout '
 
 # Pacman
+alias aurupg='rm *.pkg.tar.xz && makepkg -s && paclocal *.pkg.tar.xz'
 alias pacupg='sudo pacman-color -Syu'
 alias pacsearch='pacman-color -Ss'
 alias pacinstall='sudo pacman-color -S'
