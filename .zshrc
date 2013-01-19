@@ -17,9 +17,10 @@ setopt appendhistory
 bindkey -v
 # End of lines configured by zsh-newuser-install
 autoload -U colors && colors
-export PATH=$PATH:/usr/local/go/bin:/home/alex/bin
+export PATH=$PATH:/usr/local/go/bin:/home/alex/bin:/home/alex/.gem/ruby/1.9.1/bin
 export EDITOR=vim
 export LC_ALL="en_US.utf-8"            # Fixes an encoding problem in tmux
+export SHELL=zsh
 
 # Prompt settings
 PROMPT='%
@@ -81,7 +82,7 @@ alias gco='git checkout '
 alias aurupg='rm *.pkg.tar.xz && makepkg -s && paclocal *.pkg.tar.xz'
 alias pacupg='sudo pacman-color -Syu'
 alias pacsearch='pacman-color -Ss'
-alias pacinstall='sudo pacman-color -S'
+alias pacinstall='sudo pacman-color -Syu'
 alias paclocal='sudo pacman-color -U'
 alias pacrem='sudo pacman-color -R'
 alias pacpurge='sudo pacman-color -Rns'
