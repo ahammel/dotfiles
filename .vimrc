@@ -48,14 +48,6 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 
-" Minimal gvim terminal
-set guioptions-=m
-set guioptions-=T
-set guioptions-=r
-set guifont=Inconsolata\ Medium\ 12
-set guicursor+=a:blinkon0
-set mouse-=a
-
 """ Filetype-specific settings
 "" Makefiles
 autocmd FileType make setlocal noexpandtab
