@@ -29,6 +29,14 @@ export PATH="$PATH:/usr/local/pgsql/bin"
 export PATH="$PATH:/home/alex/builds/clustalw-2.1-linux-x86_64-libcppstatic"
 
 export GIT_EDITOR=vim
+export EDITOR=vim
+
+# Enable term colour support
+if [ -e /usr/share/terminfo/x/xterm-256color ]; then
+    export TERM='xterm-256color'
+else
+    export TERM='xterm-color'
+fi
 
 # coloured man pages, courtesy the Arch wiki
 man() {
@@ -50,8 +58,9 @@ export LESSOPEN="| /usr/bin/src-hilite-lesspipe.sh %s"
 # Reload this file
 alias reload='source ~/.zshrc'
 
-# Colorize less
+# Colorize things
 alias less='less -R'
+alias tree='tree -C'
 
 # Conveinence
 alias e=vim

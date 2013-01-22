@@ -4,7 +4,6 @@
 
 """ Basics
 set nocompatible     	    " Explicitly unset vi compatibility mode
-set background=light 	    " Assume a light-coloured background
 syntax on 		            " Syntax hilighting FTW
 set showcmd                 " Echo pending commands to the bottom of the screen
 runtime! ftplugin/man.vim   " :Man for man info
@@ -13,6 +12,7 @@ set showmatch               " highlight matching parens
 set nu                      " show line numbers by default
 let mapleader = ","         " , for leader key
 set nohlsearch              " Turn off search highlighting
+set ruler                   " Column numbers
 
 """Vundle
 filetype off                " required!
@@ -29,6 +29,8 @@ Bundle 'garbas/vim-snipmate.git'
 Bundle 'MarcWeber/vim-addon-mw-utils.git'
 Bundle 'vim-scripts/tlib.git'
 Bundle 'jcfaria/Vim-R-plugin.git'
+Bundle 'scrooloose/nerdtree.git'
+Bundle 'flazz/vim-colorschemes.git'
 
 filetype plugin indent on   " required! 
 
@@ -45,6 +47,14 @@ set smartindent
 set tabstop=4
 set shiftwidth=4
 set expandtab
+
+" Minimal gvim terminal
+set guioptions-=m
+set guioptions-=T
+set guioptions-=r
+set guifont=Inconsolata\ Medium\ 12
+set guicursor+=a:blinkon0
+set mouse-=a
 
 """ Filetype-specific settings
 "" Makefiles
