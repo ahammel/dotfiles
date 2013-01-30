@@ -13,6 +13,7 @@ set showmatch               " highlight matching parens
 set nu                      " show line numbers by default
 let mapleader = ","         " , for leader key
 set nohlsearch              " Turn off search highlighting
+set hidden                  " Allow buffers to be hidden with unsaved changes
 
 """Vundle
 filetype off                " required!
@@ -30,7 +31,8 @@ Bundle 'MarcWeber/vim-addon-mw-utils.git'
 Bundle 'vim-scripts/tlib.git'
 Bundle 'jcfaria/Vim-R-plugin.git'
 Bundle 'vim-scripts/donbass.vim'
-Bundle ' c9s/bufexplorer'
+Bundle 'c9s/bufexplorer'
+Bundle 'tpope/vim-fugitive.git'
 
 filetype plugin indent on   " required! 
 
@@ -51,6 +53,8 @@ set expandtab
 """ Filetype-specific settings
 "" Makefiles
 autocmd FileType make setlocal noexpandtab
+"" Ruby
+autocmd FileType ruby setlocal shiftwidth=2 tabstop=2
 
 """ Keybindings
 " F5 inserts current date
