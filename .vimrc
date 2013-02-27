@@ -1,5 +1,5 @@
 """ Alex's .vimrc for asimov
-" Last updated Nov 17, 2012
+" Last updated Feb 27, 2013
 "
 
 """ Basics
@@ -12,7 +12,7 @@ set showmatch               " highlight matching parens
 set nu                      " show line numbers by default
 let mapleader = ","         " , for leader key
 set nohlsearch              " Turn off search highlighting
-set ruler                   " Column numbers
+set hidden                  " Allow hidden buffers
 
 """Vundle
 filetype off                " required!
@@ -32,12 +32,22 @@ Bundle 'vim-scripts/tlib.git'
 Bundle 'jcfaria/Vim-R-plugin.git'
 Bundle 'flazz/vim-colorschemes.git'
 Bundle 'c9s/bufexplorer'
+Bundle 'tpope/vim-fugitive.git'
 
 filetype plugin indent on   " required! 
 
 """ Bundle configuration
 " No screenplugin required for R plugin
 let vimrplugin_screenplugin = 0
+
+""" Statusline configuration
+set laststatus=2                            " Turn it on
+set statusline=%t                           " Tail of filename
+set statusline+=%m                          " Modified flag
+set statusline+=%=                          " Left/right separator
+set statusline+=%c,                         " Cursor column
+set statusline+=%l/%L                       " Cursor line / total lines
+set statusline+=\ %{fugitive#statusline()}  " Git branch
 
 """ Backups
 set backup
@@ -52,8 +62,12 @@ set expandtab
 """ Filetype-specific settings
 "" Makefiles
 autocmd FileType make setlocal noexpandtab
+autocmd FileType ruby setlocal tabstop=2 shiftwidth=2
 
 """ Keybindings
+" F4 strips trailing whitespace
+nnoremap <silent> <F4> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
+
 " F5 inserts current date
 nnoremap <F5> "=strftime("%b %d, %Y")<CR>p
 inoremap <F5> <C-R>=strftime("%b %d, %Y")<CR>
