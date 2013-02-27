@@ -1,5 +1,5 @@
 " Donbass colorscheme in gvim
-colorscheme donbass
+colorscheme solarized
 
 " Minimal gvim terminal
 set guioptions-=m
