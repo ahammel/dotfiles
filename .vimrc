@@ -1,5 +1,5 @@
 """ Alex's .vimrc for asimov
-" Last updated Nov 17, 2012
+" Last updated Feb 27, 2013
 "
 
 """ Basics
@@ -41,6 +41,15 @@ filetype plugin indent on   " required!
 " No screenplugin required for R plugin
 let vimrplugin_screenplugin = 0
 
+""" Statusline configuration
+set laststatus=2                            " Turn it on
+set statusline=%t                           " Tail of filename
+set statusline+=%m                          " Modified flag
+set statusline+=%=                          " Left/right separator
+set statusline+=%c,                         " Cursor column
+set statusline+=%l/%L                       " Cursor line / total lines
+set statusline+=\ %{fugitive#statusline()}  " Git branch
+
 """ Backups
 set backup
 set backupdir=~/.vim/backup
@@ -58,6 +67,9 @@ autocmd FileType make setlocal noexpandtab
 autocmd FileType ruby setlocal shiftwidth=2 tabstop=2
 
 """ Keybindings
+" F4 strips trailing whitespace
+nnoremap <silent> <F4> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
+
 " F5 inserts current date
 nnoremap <F5> "=strftime("%b %d, %Y")<CR>p
 inoremap <F5> <C-R>=strftime("%b %d, %Y")<CR>
