@@ -32,11 +32,7 @@ export GIT_EDITOR=vim
 export EDITOR=vim
 
 # Enable term colour support
-if [ -e /usr/share/terminfo/x/xterm-256color ]; then
-    export TERM='xterm-256color'
-else
-    export TERM='xterm-color'
-fi
+export TERM='rxvt-unicode-256color'
 
 # coloured man pages, courtesy the Arch wiki
 man() {
@@ -74,3 +70,5 @@ alias gb='git branch '
 alias gc='git commit'
 alias gd='git diff'
 alias gco='git checkout '
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
