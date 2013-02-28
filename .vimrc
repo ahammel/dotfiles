@@ -64,6 +64,10 @@ set expandtab
 autocmd FileType make setlocal noexpandtab
 autocmd FileType ruby setlocal tabstop=2 shiftwidth=2
 
+"" Latex
+" Default to LaTeX if not otherwise specified
+let g:tex_flavor = "latex"
+
 """ Keybindings
 " F4 strips trailing whitespace
 nnoremap <silent> <F4> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
