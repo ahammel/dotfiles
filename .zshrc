@@ -54,6 +54,7 @@ alias reload='source ~/.zshrc'
 alias ls='ls --color'
 alias grep='grep --color'
 alias less='less -R'
+alias tree='tree -C'
 alias pacman=pacman-color
 
 # Convenience
