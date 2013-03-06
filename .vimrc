@@ -62,9 +62,18 @@ set expandtab
 
 """ Filetype-specific settings
 "" Makefiles
+" Proper tabs
 autocmd FileType make setlocal noexpandtab
+
 "" Ruby
-autocmd FileType ruby setlocal shiftwidth=2 tabstop=2
+" Two-space tabs
+autocmd FileType ruby setlocal tabstop=2 shiftwidth=2
+
+"" Latex
+" Default to LaTeX if not otherwise specified
+let g:tex_flavor = "latex"
+" Wrap text
+autocmd FileType tex setlocal wrap linebreak textwidth=0
 
 """ Keybindings
 " F4 strips trailing whitespace
