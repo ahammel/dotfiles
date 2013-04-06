@@ -55,7 +55,7 @@ alias ls='ls --color'
 alias grep='grep --color'
 alias less='less -R'
 alias tree='tree -C'
-alias pacman=pacman-color
+alias pacman=pacman
 
 # Convenience
 alias e=vim
@@ -81,9 +81,9 @@ alias gco='git checkout '
 
 # Pacman
 alias aurupg='rm *.pkg.tar.xz && makepkg -s && paclocal *.pkg.tar.xz'
-alias pacupg='sudo pacman-color -Syu'
-alias pacsearch='pacman-color -Ss'
-alias pacinstall='sudo pacman-color -Syu'
-alias paclocal='sudo pacman-color -U'
-alias pacrem='sudo pacman-color -R'
-alias pacpurge='sudo pacman-color -Rns'
+alias pacupg='sudo pacman -Syu'
+alias pacsearch='pacman -Ss'
+alias pacinstall='sudo pacman -Syu'
+alias paclocal='sudo pacman -U'
+alias pacrem='sudo pacman -R'
+alias pacpurge='sudo pacman -Rns'
