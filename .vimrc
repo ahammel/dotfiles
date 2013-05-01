@@ -33,6 +33,8 @@ Bundle 'jcfaria/Vim-R-plugin.git'
 Bundle 'flazz/vim-colorschemes.git'
 Bundle 'c9s/bufexplorer'
 Bundle 'tpope/vim-fugitive.git'
+Bundle 'tpope/vim-unimpaired.git'
+Bundle 'vim-scripts/sql.vim--Stinson.git'
 
 filetype plugin indent on   " required! 
 
