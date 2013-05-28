@@ -34,6 +34,7 @@ Bundle 'flazz/vim-colorschemes.git'
 Bundle 'c9s/bufexplorer'
 Bundle 'tpope/vim-fugitive.git'
 Bundle 'tpope/vim-unimpaired.git'
+Bundle 'tpope/vim-git.git'
 Bundle 'vim-scripts/sql.vim--Stinson.git'
 
 filetype plugin indent on   " required! 
@@ -75,6 +76,10 @@ autocmd FileType ruby setlocal tabstop=2 shiftwidth=2
 let g:tex_flavor = "latex"
 " Wrap text
 autocmd FileType tex setlocal wrap linebreak textwidth=0
+
+"" Text
+" Wrap text
+autocmd FileType text setlocal wrap linebreak textwidth=0
 
 """ Keybindings
 " F4 strips trailing whitespace
