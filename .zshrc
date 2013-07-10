@@ -62,6 +62,7 @@ alias tree='tree -C'
 alias e=vim
 alias py.test3='python3 -m py.test'
 alias vc='perl /home/alex/builds/vc-calc/vc/vc.pl'
+alias xc='xclip -selection clipboard'
 
 # git
 alias gst='git status '
