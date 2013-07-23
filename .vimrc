@@ -1,5 +1,5 @@
 """ Alex's .vimrc for asimov
-" Last updated Feb 27, 2013
+" Last updated Jul 23, 2013
 "
 
 """ Basics
@@ -36,6 +36,8 @@ Bundle 'tpope/vim-fugitive.git'
 Bundle 'tpope/vim-unimpaired.git'
 Bundle 'tpope/vim-git.git'
 Bundle 'vim-scripts/sql.vim--Stinson.git'
+Bundle 'spiiph/vim-space.git'
+Bundle 'kien/ctrlp.vim.git'
 
 filetype plugin indent on   " required! 
 
