@@ -22,12 +22,6 @@ export LESSOPEN="| /usr/bin/src-hilite-lesspipe.sh %s"
 autoload -U promptinit && promptinit
 prompt redhat
 
-export PATH="$PATH:/home/alex/Applications/ncbi-blast-2.2.26+/bin/"
-export PATH="$PATH:/home/alex/Applications/firefox"
-export PATH="$PATH:/home/alex/bin"
-export PATH="$PATH:/usr/local/pgsql/bin"
-export PATH="$PATH:/home/alex/builds/clustalw-2.1-linux-x86_64-libcppstatic"
-
 export GIT_EDITOR=vim
 export EDITOR=vim
 
@@ -47,9 +41,6 @@ man() {
         man "$@"
 }
 
-# source highlighting in less!
-export LESSOPEN="| /usr/bin/src-hilite-lesspipe.sh %s"
-
 ## Aliases
 # Reload this file
 alias reload='source ~/.zshrc'
@@ -61,8 +52,6 @@ alias tree='tree -C'
 # Conveinence
 alias e=vim
 alias py.test3='python3 -m py.test'
-alias vc='perl /home/alex/builds/vc-calc/vc/vc.pl'
-alias xc='xclip -selection clipboard'
 
 # git
 alias gst='git status '
@@ -71,5 +60,3 @@ alias gb='git branch '
 alias gc='git commit'
 alias gd='git diff'
 alias gco='git checkout '
-
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
