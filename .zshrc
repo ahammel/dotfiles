@@ -15,31 +15,11 @@ unsetopt beep nomatch
 bindkey -v
 # End of lines configured by zsh-newuser-install
 
-# Syntax highlighting in less!
-export LESSOPEN="| /usr/bin/src-hilite-lesspipe.sh %s"
-
-
 autoload -U promptinit && promptinit
 prompt redhat
 
 export GIT_EDITOR=vim
 export EDITOR=vim
-
-# Enable term colour support
-export TERM='rxvt-unicode-256color'
-
-# coloured man pages, courtesy the Arch wiki
-man() {
-    env \
-        LESS_TERMCAP_mb=$(printf "\e[1;31m") \
-        LESS_TERMCAP_md=$(printf "\e[1;31m") \
-        LESS_TERMCAP_me=$(printf "\e[0m") \
-        LESS_TERMCAP_se=$(printf "\e[0m") \
-        LESS_TERMCAP_so=$(printf "\e[1;44;33m") \
-        LESS_TERMCAP_ue=$(printf "\e[0m") \
-        LESS_TERMCAP_us=$(printf "\e[1;34m") \
-        man "$@"
-}
 
 ## Aliases
 # Reload this file
@@ -51,7 +31,6 @@ alias tree='tree -C'
 
 # Conveinence
 alias e=vim
-alias py.test3='python3 -m py.test'
 
 # git
 alias gst='git status '
