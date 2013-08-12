@@ -22,10 +22,6 @@ set statusline+=%=                          " Left/right separator
 set statusline+=%c,                         " Cursor column
 set statusline+=%l/%L                       " Cursor line / total lines
 
-""" Backups
-set backup
-set backupdir=~/.vim/backup
-
 """ 4-space autotabs
 set smartindent
 set tabstop=4
