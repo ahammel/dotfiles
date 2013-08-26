@@ -25,7 +25,6 @@ Bundle 'gmarik/vundle'
 
 " original repos on github
 Bundle 'scrooloose/nerdcommenter.git'
-Bundle 'scrooloose/nerdtree.git'
 Bundle 'garbas/vim-snipmate.git'
 Bundle 'MarcWeber/vim-addon-mw-utils.git'
 Bundle 'vim-scripts/tlib.git'
@@ -40,6 +39,7 @@ Bundle 'tpope/vim-surround.git'
 Bundle 'vim-scripts/sql.vim--Stinson.git'
 Bundle 'spiiph/vim-space.git'
 Bundle 'kien/ctrlp.vim.git'
+Bundle 'gregsexton/gitv.git'
 
 filetype plugin indent on   " required! 
 
